@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Group>
+    <teacher>
+        <name>Serhii</name>
+        <salary>666</salary>
+        <surname>Pasko</surname>
+        <yearOfBorn>1988</yearOfBorn>
+    </teacher>
+    <students>
+        <student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="student">
+            <name>Iza</name>
+            <yearOfBorn>1997</yearOfBorn>
+        </student>
+        <student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="student">
+            <name>Abram</name>
+            <yearOfBorn>1998</yearOfBorn>
+        </student>
+        <student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="teacher">
+            <name>Moisha</name>
+            <salary>666</salary>
+            <surname>Stefan</surname>
+            <yearOfBorn>1990</yearOfBorn>
+        </student>
+    </students>
+    <room city="Kiyv" street="Tarasivska">
+        <house>16</house>
+        <number>28</number>
+    </room>
+    <hrs>
+        <humanResource>
+            <name>Efiria</name>
+            <startWorkYear>2016</startWorkYear>
+            <surname></surname>
+            <yearOfBorn>1989</yearOfBorn>
+        </humanResource>
+        <humanResource>
+            <name>Karmen</name>
+            <startWorkYear>2015</startWorkYear>
+            <surname></surname>
+            <yearOfBorn>1990</yearOfBorn>
+        </humanResource>
+    </hrs>
+    <id>18122018</id>
+</Group>

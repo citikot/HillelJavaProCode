@@ -1,0 +1,39 @@
+{
+  "room" : {
+    "city" : "Kiyv",
+    "street" : "Tarasivska",
+    "house" : 16,
+    "number" : 28
+  },
+  "teacher" : {
+    "name" : "Serhii",
+    "surname" : "Pasko",
+    "yearOfBorn" : 1988,
+    "salary" : 666
+  },
+  "students" : [ {
+    "type" : "student",
+    "name" : "Iza",
+    "yearOfBorn" : 1997
+  }, {
+    "type" : "student",
+    "name" : "Abram",
+    "yearOfBorn" : 1998
+  }, {
+    "type" : "teacher",
+    "name" : "Moisha",
+    "surname" : "Stefan",
+    "yearOfBorn" : 1990,
+    "salary" : 666
+  } ],
+  "humanResources" : [ {
+    "name" : "Efiria",
+    "yearOfBorn" : 1989,
+    "startWorkYear" : 2016
+  }, {
+    "name" : "Karmen",
+    "yearOfBorn" : 1990,
+    "startWorkYear" : 2015
+  } ],
+  "id" : 18122018
+}

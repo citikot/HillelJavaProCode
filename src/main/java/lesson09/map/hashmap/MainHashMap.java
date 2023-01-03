@@ -53,24 +53,24 @@ public class MainHashMap {
 
         hashMap.putIfAbsent("Lena", "11.11.2011");
         hashMap.putIfAbsent("Svitlana", "12.12.2012");
-        System.out.println("11: " + hashMap);
+        System.out.println("12: " + hashMap);
 
         hashMap.computeIfPresent("Kate", (key, value) -> key + "***" + value);
         hashMap.computeIfPresent("Jon", (key, value) -> key + "***" + value);
-        System.out.println("12: " + hashMap);
+        System.out.println("13: " + hashMap);
 
         hashMap.computeIfAbsent("Kate", key -> key + "+++");
         hashMap.computeIfAbsent("Jon", key -> key + "+++");
-        System.out.println("13: " + hashMap);
-
-        hashMap.remove("Jon", "Jon+++");
         System.out.println("14: " + hashMap);
 
-        System.out.println("15: " + hashMap.getOrDefault("Maria", "09.09.2009"));
-        System.out.println("16: " + hashMap.getOrDefault("Basil", "07.07.2007"));
+        hashMap.remove("Jon", "Jon+++");
+        System.out.println("15: " + hashMap);
+
+        System.out.println("16: " + hashMap.getOrDefault("Maria", "09.09.2009"));
+        System.out.println("17: " + hashMap.getOrDefault("Basil", "07.07.2007"));
 
         hashMap.merge("Ola", "01.01.2001", (oldValue, newValue) -> oldValue + "---" + newValue);
         hashMap.merge("Basil", "01.01.2001", (oldValue, newValue) -> oldValue + "---" + newValue);
-        System.out.println("17: " + hashMap);
+        System.out.println("18: " + hashMap);
     }
 }

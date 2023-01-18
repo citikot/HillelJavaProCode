@@ -1,4 +1,4 @@
-package lesson12.multithreading.singleton;
+package lesson13.multithreading.singleton;
 
 /**
  * @author spasko

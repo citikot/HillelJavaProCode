@@ -1,4 +1,4 @@
-package lesson12.multithreading.volotile;
+package lesson13.multithreading.volotile;
 
 public class MainVolatile {
     private static volatile int intVariableBetweenThreads = 0;

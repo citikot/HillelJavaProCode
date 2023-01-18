@@ -1,10 +1,10 @@
-package lesson12.multithreading.singleton;
+package lesson13.multithreading.singleton;
 
 /**
  * @author spasko
  */
 public class S5TheadSafeSingletonEffective {
-	private static S5TheadSafeSingletonEffective instance;
+	private static volatile S5TheadSafeSingletonEffective instance;
 
 	private S5TheadSafeSingletonEffective() {
 	}

@@ -10,10 +10,10 @@ public class MainSelectionSort {
         for (int i = 0; i < n - 1; i++) {
             // Find the minimum element in unsorted array
             int minIndex = i;
-            for (int j = i + 1; j < n; j++)
+            for (int j = i + 1; j < n; j++) {
                 if (intValues[j] < intValues[minIndex])
                     minIndex = j;
-
+            }
             // Swap the found minimum element with the first
             // element
             int temp = intValues[minIndex];

@@ -1,4 +1,4 @@
-package lesson16.tree;
+package lesson17.tree;
 
 // class RedBlackTree implements the operations in Red Black Tree
 public class MainRedBlackTree {

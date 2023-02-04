@@ -35,7 +35,7 @@ public class MainStreamSources {
 
         // Create infinite stream
         // using Stream.iterate() method
-        stream = Stream.iterate("a", (String element) -> String.valueOf((char) (element.charAt(0) + 1)))
+        stream = Stream.iterate("a", element -> String.valueOf((char) (element.charAt(0) + 1)))
                 .limit(3);
         printStream(5, stream);
 

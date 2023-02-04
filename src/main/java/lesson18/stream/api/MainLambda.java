@@ -62,6 +62,7 @@ public class MainLambda {
         System.out.println("\nShow type only for each");
         fruits.stream()
                 .map(Fruit::getFruitType)
+                .distinct()
                 .forEach(System.out::println);
 
         System.out.println("\nLogging for show type only for each");
@@ -126,7 +127,7 @@ public class MainLambda {
 
         System.out.println("\nCount apples");
         System.out.println(fruits.stream()
-                .filter(fr -> PEAR.equals(fr.getFruitType()))
+                .filter(fr -> APPLE.equals(fr.getFruitType()))
                 .count());
 
         System.out.println("\nHave we fruits that can live more 50 days?");
@@ -152,7 +153,7 @@ public class MainLambda {
                 .map(Fruit::getDayToLive)
                 .max(Comparator.naturalOrder())
                 .get());
-
+        
         System.out.println("\nShow forEach parallel");
         fruits.parallelStream()
                 .forEach(System.out::println);

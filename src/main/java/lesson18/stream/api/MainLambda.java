@@ -188,9 +188,10 @@ public class MainLambda {
                 //.collect(Collectors.toList()));
 
         System.out.println("\nArrayDeque of deliveryDates");
-        System.out.println(fruits.stream()
+        ArrayDeque<LocalDate> collect = fruits.stream()
                 .map(Fruit::getDeliveryDate)
-                .collect(Collectors.toCollection(ArrayDeque::new)));
+                .collect(Collectors.toCollection(ArrayDeque::new));
+        System.out.println(collect);
 
         System.out.println("\nMap by prices");
         System.out.println(fruits.stream()

@@ -2,7 +2,7 @@ package lesson21.pattern.adapter;
 
 class MainAdapter {
     public static void main(String args[]) {
-        Sparrow sparrow = new Sparrow();
+        Bird sparrow = new Sparrow();
         ToyDuck toyDuck = new PlasticToyDuck();
 
         // Wrap a bird in a birdAdapter so that it

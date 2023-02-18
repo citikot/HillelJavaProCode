@@ -11,6 +11,7 @@ public class BirdAdapter implements ToyDuck {
         this.bird = bird;
     }
 
+    @Override
     public void squeak() {
         // translate the methods appropriately
         bird.makeSound();

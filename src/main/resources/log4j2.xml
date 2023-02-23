@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration status="WARN" monitorInterval="30">
+	<Properties>
+		<Property name="LOG_PATTERN">
+			%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2}	(%F:%L) -- [%X{uuid}] %m%n
+		</Property>
+	</Properties>
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+
+		<RollingFile name="PROGRAM-LOGGER-APPENDER" append="true"
+			fileName="logs${sys:file.separator}example-logger.log"
+			filePattern="info-%d{yyyy-MM-dd}-%i.log">
+
+			<PatternLayout pattern="${LOG_PATTERN}" />
+
+			<Policies>
+				<SizeBasedTriggeringPolicy size="30 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="2" />
+		</RollingFile>
+
+		<SMTP name="EMAIL" 
+			SMTPProtocol="smtps"
+			SMTPHost="smtp.gmail.com" 
+			SMTPPort="465"
+			SMTPUsername="paskoserhii88@gmail.com" 
+			SMTPPassword="ajlspovpajtutpjp"
+			To="paskoserhii88@gmail.com" 
+			from="paskoserhii88@gmail.com"
+			Subject="Calculator Error Log">
+		</SMTP>
+
+	</Appenders>
+	<Loggers>
+		<AsyncLogger name="com.mchange" level="error" />
+		<AsyncLogger name="org.hibernate" level="error" />
+		<AsyncLogger name="org.springframework" level="error" />
+
+		<AsyncLogger name="error-logger" level="ERROR">
+			<AppenderRef ref="EMAIL" />
+		</AsyncLogger>
+
+		<Root level="DEBUG" includeLocation="true">
+			<AppenderRef ref="STDOUT" level="DEBUG" />
+			<AppenderRef ref="PROGRAM-LOGGER-APPENDER" level="DEBUG" />
+		</Root>
+	</Loggers>
+</Configuration>

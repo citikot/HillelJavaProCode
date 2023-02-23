@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class HotelСuisine implements Restaurant, Bar {
+public class HotelCuisine implements Restaurant, Bar {
     private Restaurant meatRestaurant = new MeatRestaurant();
     private Restaurant vegetarianRestaurant = new VegetarianRestaurant();
     private Restaurant fishRestaurant = new FishRestaurant();

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b9273475-2ebe-415f-986a-580e445ee323",
+		"name": "Rest Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5338376"
+	},
+	"item": [
+		{
+			"name": "get Group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9998/api/18122018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"api",
+						"18122018"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add to Group",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Iza\",\n    \"yearOfBorn\": 1997\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9998/api/18122018/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9998",
+					"path": [
+						"api",
+						"18122018",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

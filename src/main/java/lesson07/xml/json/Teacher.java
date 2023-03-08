@@ -1,6 +1,6 @@
 package lesson07.xml.json;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author spasko

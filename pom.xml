@@ -82,11 +82,19 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.32</version>
 		</dependency>
-		<!--One of connections pool -->
+		
+		<!--One of connection pools -->
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.5.5</version>
+		</dependency>
+		
+		<!--Netty -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.89.Final</version>
 		</dependency>
 
 		<!--JUnit -->

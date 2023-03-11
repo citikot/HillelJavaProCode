@@ -1,0 +1,6 @@
+1. Show employees working in Paris and Tokyo
+2. Show employees how many clients they supported (from 0 to ...)
+3. Show employees reported to Bondur Gerard
+4. Show employees that helped less than five clients
+5. Show all employees with not Shipped orders 
+6. Show the best and the worst employees (by the count of the Shipped orders)

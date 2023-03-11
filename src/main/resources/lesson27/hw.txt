@@ -1,0 +1,6 @@
+1. Show all offices with codes 4,5,6,7. Do the task in three different ways
+2. Show all products where there are models of the 1936 year
+3. Show all products that were produced by "Motor City Art Classics" "Exoto Designs" in scale "1:24'
+4. Show all orders without the shipped date
+5. Show all offices in reverse order (from Z to A) by city names
+6. Show all product vendors in natural order (from A to Z)

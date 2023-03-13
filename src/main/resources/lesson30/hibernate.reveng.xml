@@ -18,4 +18,10 @@
 		match-catalog="classicmodels">
 	</table-filter>
 	<table-filter match-name="products" match-catalog="classicmodels"></table-filter>
+
+	<table schema="classicmodels" name="orderdetails">
+		<column name="quantityOrdered"></column>
+		<column name="priceEach" exclude="true" />
+		<column name="orderLineNumber" exclude="true" />
+	</table>
 </hibernate-reverse-engineering>

@@ -1,0 +1,3 @@
+1. Add a new Customer who is supported by manager "Jennings Leslie". Also, add an order for him with a product - '1996 Moto Guzzi 1100i'
+2. Update customerName = customerName +' Superstar' for customers that did more than 10 orders
+3. Delete customer "Diecast Collectables" and related data

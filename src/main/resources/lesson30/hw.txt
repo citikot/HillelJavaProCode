@@ -1,0 +1,5 @@
+Add CRUD operations for orders. For each you may use orderId
+-add order to the customer (by id), without details
+-update order status and comment 
+-delete order 
+-find order by id 

@@ -153,6 +153,13 @@
 			<version>6.1.7.Final</version>
 		</dependency>
 
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>6.0.6</version>
+		</dependency>
+
 		<!--JUnit -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>

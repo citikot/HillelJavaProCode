@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "3eb060ae-1940-473e-880f-b8f0e79147d4",
+		"name": "TomcatSpring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5338376"
+	},
+	"item": [
+		{
+			"name": "get Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/CourseTomcatSpring/customers/777",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CourseTomcatSpring",
+						"customers",
+						"777"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/CourseTomcatSpring/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CourseTomcatSpring",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/CourseTomcatSpring/customers/777",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CourseTomcatSpring",
+						"customers",
+						"777"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/CourseTomcatSpring/customers/777?contactFirstName=newName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CourseTomcatSpring",
+						"customers",
+						"777"
+					],
+					"query": [
+						{
+							"key": "contactFirstName",
+							"value": "newName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerNumber\": 111,\r\n    \"customerName\": \"Pasko Inc\",\r\n    \"contactLastName\": \"Pasko\",\r\n    \"contactFirstName\": \"Serhii\",\r\n    \"phone\": \"123456\",\r\n    \"addressLine1\": \"Address line1\",\r\n    \"addressLine2\": \"Address line2\",\r\n    \"city\": \"Kyiv\",\r\n    \"state\": null,\r\n    \"postalCode\": null,\r\n    \"country\": \"USA\",\r\n    \"creditLimit\": 333,\r\n    \"orders\": [\r\n        {\r\n            \"orderNumber\": 111,\r\n            \"orderDate\": \"2023-03-19 16:42:47\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/CourseTomcatSpring/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CourseTomcatSpring",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

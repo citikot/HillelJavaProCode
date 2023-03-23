@@ -60,15 +60,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8090/customers/777",
+					"raw": "http://localhost:8090/actuator",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8090",
 					"path": [
-						"customers",
-						"777"
+						"actuator"
 					]
 				}
 			},

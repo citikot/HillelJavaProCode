@@ -10,9 +10,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,9 +23,9 @@ public class Order {
 
     private int orderNumber;
     private Customer customer;
-    private Date orderDate;
-    private Date requiredDate;
-    private Date shippedDate;
+    private LocalDateTime orderDate;
+    private LocalDateTime requiredDate;
+    private LocalDateTime shippedDate;
     private String status;
     private String comments;
     private Set<Product> product = new HashSet<>(0);
@@ -35,7 +33,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(int orderNumber, Customer customer, Date orderDate, Date requiredDate, String status) {
+    public Order(int orderNumber, Customer customer, LocalDateTime orderDate, LocalDateTime requiredDate, String status) {
         this.orderNumber = orderNumber;
         this.customer = customer;
         this.orderDate = orderDate;
@@ -43,7 +41,7 @@ public class Order {
         this.status = status;
     }
 
-    public Order(int orderNumber, Customer customer, Date orderDate, Date requiredDate, Date shippedDate,
+    public Order(int orderNumber, Customer customer, LocalDateTime orderDate, LocalDateTime requiredDate, LocalDateTime shippedDate,
             String status, String comments, Set<Product> product) {
         this.orderNumber = orderNumber;
         this.customer = customer;
@@ -76,33 +74,30 @@ public class Order {
         this.customer = customer;
     }
 
-    @Temporal(TemporalType.DATE)
     @Column(name = "orderDate", nullable = false, length = 10)
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return this.orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
 
-    @Temporal(TemporalType.DATE)
     @Column(name = "requiredDate", nullable = false, length = 10)
-    public Date getRequiredDate() {
+    public LocalDateTime getRequiredDate() {
         return this.requiredDate;
     }
 
-    public void setRequiredDate(Date requiredDate) {
+    public void setRequiredDate(LocalDateTime requiredDate) {
         this.requiredDate = requiredDate;
     }
 
-    @Temporal(TemporalType.DATE)
     @Column(name = "shippedDate", length = 10)
-    public Date getShippedDate() {
+    public LocalDateTime getShippedDate() {
         return this.shippedDate;
     }
 
-    public void setShippedDate(Date shippedDate) {
+    public void setShippedDate(LocalDateTime shippedDate) {
         this.shippedDate = shippedDate;
     }
 

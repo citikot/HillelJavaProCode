@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "1bb7c741-09fc-4050-abc7-5f01c837d34a",
+		"name": "SpringData",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5338376"
+	},
+	"item": [
+		{
+			"name": "get all Customers by Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/additional/customers?customerName=Salzburg Collectables",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"additional",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "customerName",
+							"value": "Salzburg Collectables"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Customer by OrderId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/additional/customers/order?orderId=10419",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"additional",
+						"customers",
+						"order"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "10419"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Customers with exists order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/additional/customers/orders?page=2&size=5&sort=customerName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"additional",
+						"customers",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "customerName"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

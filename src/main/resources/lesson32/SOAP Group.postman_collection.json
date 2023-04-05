@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "50753a2a-81df-4f79-8009-1bb7c5289f1d",
+		"_postman_id": "5826428f-d8f6-4899-83bf-4648acd01a62",
 		"name": "SOAP Group",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "5338376"
@@ -37,7 +37,7 @@
 			"response": []
 		},
 		{
-			"name": "get Group Copy",
+			"name": "add to Group",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -50,7 +50,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:pm=\"http://soap.lesson32/\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <pm:getGroup>\n            <arg0>\n                18122018\n            </arg0>\n        </pm:getGroup>/>\n    </soapenv:Body>\n</soapenv:Envelope>"
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:pm=\"http://soap.lesson32/\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <pm:addStudents>\n            <arg0>\n                18122018\n            </arg0>\n            <arg1 xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"pm:student\">\n                <name>First</name>\n                <yearOfBorn>1995</yearOfBorn>\n            </arg1>\n            <arg1 xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:type=\"pm:teacher\">\n                <name>Second</name>\n                <salary>666</salary>\n                <surname>Second</surname>\n                <yearOfBorn>1990</yearOfBorn>\n            </arg1>\n        </pm:addStudents>/>\n    </soapenv:Body>\n</soapenv:Envelope>"
 				},
 				"url": {
 					"raw": "http://localhost:9999/group",

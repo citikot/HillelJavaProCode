@@ -54,7 +54,7 @@ public class MainGroupClient {
         conn.setDoOutput(true);
         conn.setRequestMethod("PUT");
         conn.setRequestProperty("Content-Type", "application/json");
-        String input = "{\"name\": \"Iza\",\"yearOfBorn\": 1997	}";
+        String input = "{\"name\": \"Rebecca\",\"yearOfBorn\": 1907	}";
 
         OutputStream os = conn.getOutputStream();
         os.write(input.getBytes());
